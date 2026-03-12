@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light e Dark</title>
+
+    <style>
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá mundo claro e mundo escuro</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi pariatur facilis repellat nobis suscipit
+        incidunt. Mollitia, eaque expedita blanditiis exercitationem enim ipsam perspiciatis aut consectetur doloremque
+        possimus voluptates pariatur.
+    </p>
+
+    <button id="toggleMode">Alternar Tema</button>
+
+    <script>
+        const toggleMode = document.getElementById("toggleMode");
+
+        toggleMode.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            document.body.classList.toggle("light");
+        });
+    </script>
+</body>
+
+</html>
